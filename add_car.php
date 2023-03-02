@@ -1,6 +1,6 @@
 <?php
 // Connexion à la base de données
-$db = new PDO('pgsql:host=localhost;port=5432;dbname=videotomobileUS', 'yanis', '');
+$db = new PDO('pgsql:host=localhost;port=5432;dbname=videotomobileUS', '', '');
 
 // Récupération des données envoyées par le formulaire
 $make = $_POST['make'];
