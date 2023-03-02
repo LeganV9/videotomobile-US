@@ -1,0 +1,47 @@
+/* Appliquer une police de caractères sans-serif */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Centrer le titre */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Ajouter une bordure et du padding aux vignettes de voiture */
+  .car-thumbnail {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Aligner les vignettes de voiture en colonnes */
+  .car-thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Styliser le bouton de recherche */
+  .search-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Ajouter du padding autour du formulaire de recherche */
+  .search-form {
+    padding: 20px;
+  }
+  
+  /* Styliser les liens */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
