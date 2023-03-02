@@ -1,47 +1,130 @@
-/* Appliquer une police de caractères sans-serif */
+/* Style pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
   }
   
-  /* Centrer le titre */
-  h1 {
-    text-align: center;
-  }
-  
-  /* Ajouter une bordure et du padding aux vignettes de voiture */
-  .car-thumbnail {
-    border: 1px solid #ccc;
+  /* Style pour l'en-tête de la page */
+  header {
+    background-color: #333;
+    color: #fff;
     padding: 10px;
   }
   
-  /* Aligner les vignettes de voiture en colonnes */
-  .car-thumbnail-container {
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  /* Style pour la section d'annonces */
+  section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  /* Styliser le bouton de recherche */
-  .search-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  /* Ajouter du padding autour du formulaire de recherche */
-  .search-form {
     padding: 20px;
   }
   
-  /* Styliser les liens */
-  a {
-    color: #007bff;
-    text-decoration: none;
+  /* Style pour les vignettes de voiture */
+  .car-thumbnail {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   }
   
-  a:hover {
+  .car-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .car-thumbnail h2 {
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .car-thumbnail p {
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  /* Style pour le lien "Voir plus" */
+  .more-link {
+    display: block;
+    margin: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .more-link:hover {
     text-decoration: underline;
   }
   
+  .video-thumbnail .video-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* DÉBUT CODE SLIDESHOW BANNIERE */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  .mySlides img {
+    margin: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  .dot {
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* FIN CODE SLIDESHOW BANNIERE */
