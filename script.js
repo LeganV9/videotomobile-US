@@ -18,7 +18,7 @@ function searchCars() {
   }
   /* FIN Dans ce code, nous avons récupéré les valeurs des champs de recherche en utilisant la méthode "getElementById" de l'objet "document". Nous avons ensuite filtré les annonces de voiture en utilisant la méthode "filter" de l'objet "Array". Enfin, nous avons appelé une fonction nommée "displayCars" pour afficher les annonces filtrées. */
 
-  
+
   /* DEBUT Il ne nous reste plus qu'à ajouter la fonction "displayCars" pour afficher les annonces de voiture sur la page. Voici un exemple de code JavaScript pour cette fonction :*/
 
   function displayCars(cars) {
@@ -56,4 +56,24 @@ function searchCars() {
       container.appendChild(card);
     });
   }
-  /* FIN Il ne nous reste plus qu'à ajouter la fonction "displayCars" pour afficher les annonces de voiture sur la page. Voici un exemple de code JavaScript pour cette fonction :*/
+  /* FIN fonction "displayCars" pour afficher les annonces de voiture sur la page. Voici un exemple de code JavaScript pour cette fonction */
+
+  /* DEBUT code JavaScript pour envoyer le formulaire d'ajout d'annonce à un serveur */
+
+  const form = document.querySelector('form');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const response = await fetch('/api/add-car', {
+    method: 'POST',
+    body: formData
+  });
+  if (response.ok) {
+    alert('Annonce ajoutée avec succès !');
+    form.reset();
+  } else {
+    alert('Une erreur est survenue lors de l\'ajout de l\'annonce.');
+  }
+});
+  /* FIN code JavaScript pour envoyer le formulaire d'ajout d'annonce à un serveur */

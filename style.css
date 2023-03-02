@@ -68,3 +68,63 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  /* Style pour la page ajout de voiture */
+
+  .add-form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+  }
+  
+  .add-form h2 {
+    margin-top: 0;
+  }
+  
+  .add-form form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .add-form label {
+    margin-right: 10px;
+    flex-basis: 100%;
+  }
+  
+  .add-form input[type="text"],
+  .add-form input[type="number"],
+  .add-form input[type="url"],
+  .add-form textarea {
+    padding: 5px;
+    border: 1px solid #ddd;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .add-form button {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+    /* Style pour le bouton ajout de voitur sur page principale */
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
